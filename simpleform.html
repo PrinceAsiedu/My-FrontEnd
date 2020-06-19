@@ -31,21 +31,63 @@
 
         input, textarea {
             border: 0;
-            border-bottom: 1px solid rgb(153, 209, 153);
+            border-bottom: 1px solid gray;
             padding: 10px 0;
             width: 250px;
         }
 
-        input:focus, textarea:focus {
-            border: 0 none rgb(255, 255, 255);
+         button {
+            background-color: black;
+            border: 0;
+            color: white;
+            font-size: 12px;
+            height: 50px;
+            width: 200px;
+            text-transform: uppercase;
+            /* border-radius: 0 25px; */
+        }
+
+        button:hover {
+            background-color: whitesmoke;
+            color: #999;
+            border: 1px solid #999;
+            box-shadow: 0 0 10px 0 gray;
+        }
+        
+        select {
+            background-color: transparent;
+            border: 0;
+            border-radius: 0;
+            border-bottom: 1px solid gray;
+            box-shadow: none;
+            color: #666;
+            padding: 10px 0;
+            width: 200px;
+            -webkit-appearance: none;
+        }
+
+        .select-wrapper {
+            position: relative;
+            width: 200px;
+        }
+
+        .select-wrapper:after {
+            content: '< >';
+            color: #666;
+            font-size: 14px;
+            top: 8px;
+            right: 0;
+            transform: rotate(90deg);
+            position: absolute;
+            z-index: -1;
         }
     </style>
 </head>
 <body>
-    <form action="url_to_send_form_data" method="post">
+    <form action="" method="post">
         <fieldset>
-            <div>
-                <label for="title">Title</label><br/>
+            <label for="title">Title</label><br/>
+            <div class="select-wrapper">
                 <select name="" id="title">
                     <option value="Mr">Mr</option>
                     <option value="Mrs">Mrs</option>
