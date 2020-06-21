@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="New account opening form">
+    <meta name="robots" content="nofollow">
+    <title>Account Signup</title>
+
+    <style type="text/css">
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .form-wrapper {
+            /* margin-top: 150px; */
+            margin-left: 500px;
+        }
+
+        fieldset {
+            border: 0;
+        }
+
+        fieldset > div {
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        label span{
+            color: red;
+        }
+
+        input {
+            padding: 10px;
+            width: 200px;
+            border: 1px solid forestgreen;
+            /* box-shadow: 0 0 5px 0 gray; */
+        }
+
+        input:valid {
+            border: 2px solid green;
+        }
+
+        /* This uncomment in case you need to highlight 
+            the unfilled window
+
+        input:invalid {
+            border: 1px solid red;
+        } */  
+
+        .checkbox input {
+            float: left;
+            margin-right: 10px;
+            width: auto;
+        }
+
+        button {
+            background-color: green;
+            border: 0;
+            color: white;
+            width: 224px;
+            padding: 15px;
+            text-transform: uppercase;
+            border-radius: 25px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-wrapper">
+        <h2 class="form-header">Create new account</h2>
+        <form action="#" method="POST">
+            <fieldset>
+                <div>
+                    <label for="firstname">First name: <span>*</span></label><br>
+                    <input type="text" name="first_name" id="firstname" required>
+                </div>
+                <div>
+                    <label for="lastname">Last name: <span>*</span></label><br>
+                    <input type="text" name="last_name" id="lastname" required>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="newsletter" id="newsletter" value="yes">
+                    <label for="newsletter">Signup up for newsletter</label><br>
+                </div>
+                <div>
+                    <label for="email">Email: <span>*</span></label><br>
+                    <input type="email" name="e_mail" id="email" required><br>
+                </div>
+                <div>
+                    <label for="pass">Password: <span>*</span></label><br>
+                    <input type="password" name="pass" id="password" required><br>
+                </div>
+                <button type="submit">Create Account</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
