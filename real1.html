@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="just a test of might">
+    <meta name="author" content="Prince Oforh Asiedu">
+    <title>Entertainment Zone</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* body {
+            background: linear-gradient(whitesmoke, white);
+        } */
+       
+        .site-wrapper {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 1200px;
+            margin: 0 auto;
+            box-shadow: 0 0 15px 0 gray;
+            margin-bottom: 20px;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            background-color: whitesmoke;
+        }
+
+        nav {
+            margin-left: 30px;
+        }
+
+        .signin { 
+            margin-left: 45px;
+        }
+
+        .signin ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .signin a {
+            text-decoration: none;
+            padding: 18px;
+            color: gray;
+            font-size: 16px;
+            text-transform: capitalize;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 18px;
+            color: gray;
+            font-size: 16px;
+            text-transform: capitalize;
+        }
+
+        nav a:hover, .signin a:hover {
+            color: snow;
+            background-color: black;
+            box-shadow: 0 0 15px 0px gray;
+        }
+
+        .signin a:hover {
+            color: snow;
+            background-color: black;
+            box-shadow: 0 0 15px 0px gray;
+        }
+
+        .searchfield {
+            margin-left: 30px;
+            position: static;
+            padding: 15px 10px 15px 20px;
+            width: 200px;
+            color: #525252;
+            font-size: 14px;
+            font-weight: 100;
+            border: none; 
+            border-radius: 5px;
+            background: linear-gradient(to right, #ffffff 0%,
+                                        #464747 #f9f9f9 100%);
+            transition: 0.4s ease;
+            outline: none;
+        }
+        
+        .searchfield:focus, .searchfield:hover {
+            /* border: 1px solid #464747; */
+            box-shadow: 0 0 5px 0 gray;
+        }
+
+        .page-content {
+            height: 900px;
+            background-color: white;
+        }
+
+        .intro {
+            margin-top: 50px;
+            margin-left: 50px ;
+            width: 650px;
+            color: gray;
+        }
+
+        p {
+            color: #525252;
+            font-size: 16px;
+        }
+
+        .intro h1 {
+            border-bottom: 1px solid gray;
+            width: 160px;
+            margin-bottom: 30px;
+            padding: 15px;
+        }
+
+        .intro p {
+            line-height: 1.5;
+        }
+        
+        .product-cards {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            padding: 50px;
+        }
+
+        .product-card {
+            display: inline-block;
+            border: 0.5px solid gray;
+            padding: 15px;
+            margin: 10px;
+            height: 450px;
+            border-radius: 5px;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 0 10px 0 gray;
+        }
+
+        .product-card h2 {
+            margin: 30px 0 15px;
+        }
+
+        .product-card a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .product-card img {
+            width: 100%;
+        }
+
+        .product-card p {
+            line-height: 1.5;
+        }
+
+        .original-price {
+            text-transform: uppercase;   
+        }
+
+        .current-price {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .saving {
+            color: green;
+        }
+
+        .product-card .buy-button {
+            float: right;
+            border-radius: 25px 0;
+            padding: 15px;
+            font-family: cursive;
+            color: white;
+            background-color: black;
+            margin-top: 10px;
+            height: 15px;
+            width: 40px;
+            position: relative;
+            
+        }
+
+        .product-card .buy-button:hover {
+            background-color: dodgerblue;
+            color: white;
+            box-shadow: 0 0 10px 0 black;
+        }
+    </style>
+</head>
+<body>
+    <div class="site-wrapper">
+        <header>
+            <img src="Logo.png" alt="site logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Songs</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">documentaries</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+            <div>
+                <input type="search" class="searchfield" name="searchfield" id="searchfield" placeholder="Search...">
+            </div>
+            <div class="signin">
+                <ul>
+                    <li><a href="">Log In</a></li>
+                    <li><a href="">Sign Up</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="page-content">
+            <div class="intro">
+                <h1>Welcome</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex consequuntur fugit architecto, nulla nesciunt vitae impedit dolor quo dolorum obcaecati iusto earum sint voluptates odit hic saepe. Possimus, esse ratione?</p>
+            </div>
+            <div class="product-cards">
+                <div class="product-card">
+                    <img src="https://dummyimage.com/300x300/7EC0EE/000&text=Product+Image+1" alt="">
+                    <h2><a href="">Item 1</a></h2>
+                    <p class="original-price">RRP: £18.99</p>
+                    <p class="current-price">Price you pay <span>£9.99</span></p>
+                    <p class="saving">Your saving £9</p>
+                    <a href="" class="buy-button">Buy</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://dummyimage.com/300x300/7EC0EE/000&text=Product+Image+2" alt="">
+                    <h2><a href="">Item 2</a></h2>
+                    <p class="original-price">RRP: £18.99</p>
+                    <p class="current-price">Price you pay <span>£9.99</span></p>
+                    <p class="saving">Your saving £9</p>
+                    <a href="" class="buy-button">Buy</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://dummyimage.com/300x300/7EC0EE/000&text=Product+Image+3" alt="">
+                    <h2><a href="">Item 3</a></h2>
+                    <p class="original-price">RRP: £18.99</p>
+                    <p class="current-price">Price you pay <span>£9.99</span></p>
+                    <p class="saving">Your saving £9</p>
+                    <a href="" class="buy-button">Buy</a>
+                </div>
+                <div class="product-card">
+                    <img src="https://dummyimage.com/300x300/7EC0EE/000&text=Product+Image+4" alt="">
+                    <h2><a href="">Item 4</a></h2>
+                    <p class="original-price">RRP: £18.99</p>
+                    <p class="current-price">Price you pay <span>£9.99</span></p>
+                    <p class="saving">Your saving £9</p>
+                    <a href="" class="buy-button">Buy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -28,18 +28,13 @@
             margin-left: 30px;
         }
 
-        .product-cards {
-            display: grid;
-            grid-template-columns: auto auto auto auto;
-            margin-bottom: 30px;
-        }
-
+        
         /* your styles will go here */
         nav ul {
             display: flex;
             list-style: none;
         }
-
+        
         nav a {
             text-decoration: none;
             padding: 15px;
@@ -47,37 +42,37 @@
             color: black;
             font-weight: bold;
         }
-
+        
         nav a:hover {
             color: white;
             background-color: deepskyblue;
             border-radius: 25px;
         }
-
+        
         .breadcrumb {
             display: flex;
             list-style: none;
             margin-bottom: 30px;
         }
-
+        
         .breadcrumb li {
             padding: 10px;
         }
-
+        
         .breadcrumb li::after {
             content: "/";
             margin-left: 20px;
         }
-
+        
         .breadcrumb li:last-child::after {
             content: '';
         }
-
+        
         .breadcrumb a {
             text-decoration: none;
             color: black;
         }
-
+        
         .breadcrumb a:hover {
             text-decoration: underline;
         }
@@ -87,15 +82,21 @@
             padding-left: 10px;
             width: 70%;
         }
-
+        
         .intro h1 {
             margin-bottom: 15px;
         }
-
+        
         .intro p {
             line-height: 1.5;
         }
-
+        
+        .product-cards {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            margin-bottom: 30px;
+        }
+        
         .product-card {
             display: inline-block;
             border: 1px solid black;
@@ -223,8 +224,6 @@
             <p class="saving">Your saving £9</p>
             <a href="validationstyling.html" class="buy-button">Buy</a>
         </div>
-        
-        
     </section>
 </body>
 </html>
